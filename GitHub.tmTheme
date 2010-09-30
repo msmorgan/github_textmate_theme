@@ -51,7 +51,7 @@
 			<key>name</key>
 			<string>Keyword</string>
 			<key>scope</key>
-			<string>keyword, storage</string>
+			<string>keyword, storage, punctuation.definition.arguments, punctuation.definition.group</string>
 			<key>settings</key>
 			<dict>
 				<key>fontStyle</key>
@@ -71,6 +71,73 @@
 				<string></string>
 				<key>foreground</key>
 				<string>#0086B3</string>
+			</dict>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>LaTeX Brackets</string>
+			<key>scope</key>
+			<string>text.tex punctuation.definition.arguments, text.tex punctuation.section, punctuation.definition.textit, punctuation.definition.emph, punctuation.definition.textbf</string>
+			<key>settings</key>
+			<dict>
+				<key>fontStyle</key>
+				<string></string>
+				<key>foreground</key>
+				<string>#0086B3</string>
+			</dict>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>LaTeX KISS</string>
+			<key>scope</key>
+			<string>text.tex markup</string>
+			<key>settings</key>
+			<dict>
+				<key>fontStyle</key>
+				<string></string>
+			</dict>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>Math punctuation</string>
+			<key>scope</key>
+			<string>string.other.math punctuation.definition.string</string>
+			<key>settings</key>
+			<dict>
+				<key>foreground</key>
+				<string>#DD1144</string>
+			</dict>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>Math string</string>
+			<key>scope</key>
+			<string>string.other.math</string>
+			<key>settings</key>
+			<dict>
+				<key>foreground</key>
+				<string>#0086B3</string>
+			</dict>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>Math functions</string>
+			<key>scope</key>
+			<string>constant.other.general.math</string>
+			<key>settings</key>
+			<dict/>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>LaTeX commands</string>
+			<key>scope</key>
+			<string>text.tex support.function, text.tex constant.character</string>
+			<key>settings</key>
+			<dict>
+				<key>fontStyle</key>
+				<string>bold</string>
+				<key>foreground</key>
+				<string>#000000</string>
 			</dict>
 		</dict>
 		<dict>
@@ -142,20 +209,20 @@
 			<key>name</key>
 			<string>Number</string>
 			<key>scope</key>
-			<string>constant.numeric</string>
+			<string>constant.numeric, constant.character.math, constant.other.general.math, string.other.math.block.tex support.function.general, string.other.math.tex support.function.general</string>
 			<key>settings</key>
 			<dict>
 				<key>fontStyle</key>
 				<string></string>
 				<key>foreground</key>
-				<string>#009999</string>
+				<string>#008080</string>
 			</dict>
 		</dict>
 		<dict>
 			<key>name</key>
 			<string>Variable</string>
 			<key>scope</key>
-			<string>variable.language, variable.other</string>
+			<string>variable.parameter, variable.language, variable.other</string>
 			<key>settings</key>
 			<dict>
 				<key>fontStyle</key>
@@ -210,6 +277,17 @@
 			<dict>
 				<key>foreground</key>
 				<string>#DD1144</string>
+			</dict>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>LaTeX string</string>
+			<key>scope</key>
+			<string>meta.function.begin-document variable.parameter, meta.function.end-document variable.parameter, meta.function.environment variable.parameter, text.tex string, text.tex punctuation.definition.string</string>
+			<key>settings</key>
+			<dict>
+				<key>foreground</key>
+				<string>#000000</string>
 			</dict>
 		</dict>
 		<dict>
@@ -411,12 +489,12 @@
 				<key>fontStyle</key>
 				<string></string>
 				<key>foreground</key>
-				<string>#121289</string>
+				<string>#000080</string>
 			</dict>
 		</dict>
 		<dict>
 			<key>name</key>
-			<string>html tag punctuation</string>
+			<string>html tag name</string>
 			<key>scope</key>
 			<string>entity.name.tag</string>
 			<key>settings</key>
@@ -425,6 +503,17 @@
 				<string></string>
 				<key>foreground</key>
 				<string>#121289</string>
+			</dict>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>HTML entity</string>
+			<key>scope</key>
+			<string>text.html constant.character</string>
+			<key>settings</key>
+			<dict>
+				<key>foreground</key>
+				<string>#800080</string>
 			</dict>
 		</dict>
 		<dict>
